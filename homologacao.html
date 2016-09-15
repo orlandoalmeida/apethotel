@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en pt-br">
+<head>
+	<!-- Meta charset e viewport -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Octavio Pires Neto">
+	<meta name="author" content="https://github.com/octaviopires">
+	<meta name="author" content="Orlando Estefano de Almeida">
+	<meta name="author" content="https://github.com/orlandoeal">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="theme-color" content="#001522">	
+	<title>Apet Hotel</title>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- flickity import new carrosel -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+<!-- animate.css pra usar com wow.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+
+<!-- google-fonts -->
+<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
+
+</head>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	
+<!--Cabeçalho -->
+<header >
+<div class="shade"></div>
+ 
+	<nav class="navbar navbar-fixed-top navbar-expanded navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                	<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" style="padding:0px; padding-left:5px" href="#page-top">
+                    <img width="40px" src="assets/img/logo.png" alt="">
+                </a>
+                <a class="navbar-brand page-scroll" style="margin-left:3px" href="#page-top">
+                  APETHOTEL                
+                </a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse cssmenu" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#instalacoes"><i class="fa fa-home "></i> &nbsp Suítes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#servicos"><i class="fa fa-heart "></i> &nbsp Serviços</a>
+                    </li>
+
+                      <li>
+                        <a class="page-scroll" href="#horarioFuncionamento"><i class="fa fa-clock-o "></i> &nbsp Hr. de Funcionamento</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#parceiros"><i class="fa fa-hand-spock-o"></i> &nbsp Parceiros</a>
+                    </li>
+					<li>
+						<a  class="page-scroll" href="#contato"><i class="fa fa-envelope-o"></i> &nbspContato</a>
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+  
+<div style="z-index: 2; margin-top: 100px;  " class="content">
+    
+
+    <h1 class="tituloSessao fonteBranca" style=" padding-top:0px; margin-top: -10px; text-align: center; font-size: 35pt">
+		<span onclick="tocarVideo()" id="btnPlay" style="cursor:pointer" class="glyphicon glyphicon-play-circle"></span>
+        <br>   ApetHotel
+    </h1>
+    
+  </div>
+<video id="video" poster="assets/img/posterVideo.png" height="60%" width="100%" style=" z-index: -9000; opacity:0.5"  class="video" muted loop>
+
+ <source src="assets/mp4/playground.mp4" type="video/mp4">
+ 
+</video>
+</header>    
+
+
+<!-- avaliacao -->
+<div class="row" id="avaliacao">
+	<div class="text-center container">
+		<h1 class="tituloSessao wow fadeInDownBig">  APETHOTEL  </h1>
+		<p class="wow fadeInDown" style='font-size: 30px; font-family: "Rancho", cursive; margin-bottom: 50px '> 
+			O 1º Apart-Hotel para cães <br>		
+		</p>
+
+		<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
+			<img src="assets/img/_icone/atendimento.png" id="icon">
+			<h2>Atendimento</h2>
+			<hr/>  
+			<p id="desc">
+				Muito atenciosos e cuidadosos me deram muito biscoito
+			</p>
+		</div>
+
+		<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.4s">  
+			<img src="assets/img/_icone/instalacoes.png" id="icon">
+			<h2>instalações</h2>
+			<hr/>
+			<p id="desc">
+				Vários brinquedos fofinhos, e muita diversão (tinha uma cadelinha linda ao lá...)
+			</p>
+		</div>
+
+		<div class=" col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.6s">  
+			<img src="assets/img/_icone/cuidado.png" id="icon">
+			<h2>cuidado</h2>
+			<hr/>
+			<p id="desc">
+				Todos me chamaram pelo nome e me davam muito carinho :3
+			</p>
+		</div>
+
+		<div class="row"></div>
+
+		<div class="carousel" data-flickity>
+			<div class="carousel-cell jumbotron">
+				<div class="row col-sm-12">
+					<img src="assets/img/_avaliacao/cv.jpg" class="img-circle" alt="orlando comentario">
+					<h3>Orlando o mito</h3>
+					<hr>
+					<p>
+						<br>
+						Caros amigos, o novo modelo estrutural aqui preconizado assume importantes<br>posições no estabelecimento das condições inegavelmente apropriadas.
+					</p>
+				</div>
+			</div>
+			
+			<!-- segunda avaliacao -->
+			<div class="carousel-cell jumbotron">
+				<div class="row col-sm-12">
+					<img src="assets/img/_avaliacao/sabrina-dog.png" class="img-circle" alt="sabrina the dog">
+					<h3>O cão amigão</h3>
+					<hr>
+					<p>
+						<br>
+						Caros amigos, o novo modelo estrutural aqui preconizado assume importantes<br>posições no estabelecimento das condições inegavelmente apropriadas.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Modal inauguração -->
+<div class="modal fade"  id="modalInauguracao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div style="background-color:#f1c40f" class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-size:50px" aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">Inauguração 23/09/2016</h4>
+      
+      <div class="modal-body">
+        	<img src="assets/img/_icone/calendario.png" class="center-block img-responsive" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Instalações -->
+<section class="module parallax parallax-1" id="instalacoes">
+  <div style="background: rgba(204, 204, 204, 0.2); padding:40px;  width:100%" class="container wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
+
+	<div class="col-sm-4 col-sm-offset-4">
+
+		<img class="center-block" src="assets/img/logo.png" alt="">
+	    <button class="btn btn-lg btn-parallax"  data-toggle="modal" data-target="#myModal"> Conheça nossas suítes</button>
+	</div>
+	
+  </div>
+</section>
+
+<!-- galeria instalacoes-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-center" id="myModalLabel">Suítes</h4>
+		      </div>
+		      <div class="modal-body" id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: 0px;  width: 960px; height: 480px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+		        <!-- Galeria -->
+            
+        <!-- Loading Screen -->
+        
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/01.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-01.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/02.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-02.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/03.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-03.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/04.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-04.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/05.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-05.jpg" />
+            </div>
+        
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+
+<!-- Galeria -->
+		</div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+<!-- versão mobile -->
+
+<section class="instalacoesMobile" id="instalacoes">
+	<div class="col-sm-4 col-sm-offset-4">
+		<img class="center-block" src="assets/img/logo.png" alt="">
+	    <button class="btn btn-lg btn-parallax"  data-toggle="modal" data-target="#myModal"> Conheça nossas suítes</button>
+	</div>
+	
+			<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-center" id="myModalLabel">Suítes</h4>
+		      </div>
+		      <div class="modal-body" id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: 0px;  width: 960px; height: 480px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+		        <!-- Galeria -->
+            
+        <!-- Loading Screen -->
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/01.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-01.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/02.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-02.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/03.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-03.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/04.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-04.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="assets/img/_galeria/05.jpg" />
+                <img data-u="thumb" src="assets/img/_galeria/thumb-05.jpg" />
+            </div>
+        
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+
+<!-- Galeria -->
+		</div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+ 
+</section>
+
+
+<!--Serviços -->
+<section  id="servicos" style="background-color: ">
+	<div class="container text-center">
+		<h1 class="tituloSessao">Serviços</h1>
+			<!-- Carrosel em  flickity -->
+			<div class="carousel" data-flickity="flickity-page-dots" >
+	  			<div data-name="carousel-cameras" class="carousel-cell" onclick="$flkty.select(0);">
+					<div  class="info">
+	  				<img src="assets/img/_icone/camera.png" alt="Camêras online em HD 24Hs">
+	            <p>Camêras online em HD 24 Hs</p>
+	  				</div>
+	  			</div>
+	  			
+	  			<div  data-name="carousel-taxi"  class="carousel-cell"  onclick="$flkty.select(1);">
+	  				<div class="info">
+	            <img src="assets/img/_icone/taxidog.png" alt="Táxi dog">
+	            <p>Táxi dog</p>
+	  				</div>
+	  			</div>
+
+	  			<div data-name="carousel-supervisao" class="carousel-cell" onclick="$flkty.select(2);">
+	  				<div class="info">
+	            		<img src="assets/img/_icone/veterinaio.png" alt="Supervisão veterinária 24 horas">
+	  					<p style="font-size:15px">Supervisão veterinária 24 horas</p>	
+	  				</div>
+	  			</div>
+
+	  			<div data-name="carousel-suites" class="carousel-cell"  onclick="$flkty.select(3);">
+	  				<div class="info">
+	  					<img src="assets/img/_icone/serviso-quarto.png" alt="Suítes com serviço de quarto">
+	            		<p>Suítes com serviço de quarto</p>
+	  				</div>
+	  			</div>
+
+	  			<div data-name="carousel-playground" class="carousel-cell"  onclick="$flkty.select(4);">
+						<div class="info">
+	            <img src="assets/img/_icone/playground.png" alt="Animais soltos no playground o dia inteiro">
+	  					<p>Animais soltos no playground o dia inteiro</p>
+	  				</div>
+	  			</div>
+
+	  			<div data-name="carousel-atividades" class="carousel-cell"  onclick="$flkty.select(5);">
+						<div class="info">
+	            <img src="assets/img/_icone/toys.png" alt="Atividades e brinquedos anti-stress">
+	  					<p>Atividades e brinquedos anti-stress</p>
+	  				</div>
+	  			</div>
+
+			</div>
+
+
+
+		</div>
+
+			<div class="DescServico  slideUp" style="background-color:#334; width:100%; min-height: 400px;padding-top:50px" >
+				<div class="col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-1 text-left">
+					<h2 class="tituloLista tituloDescServico fonteBranca"> CAMERAS ONLINE EM HD. 24 HRS. POR DIA</h2>
+
+					<p class="textoDescServico ">As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação não pode mais se dissociar do levantamento das variáveis envolvidas. Não obstante, a expansão dos mercados mundiais faz parte de um processo de gerenciamento de alternativas às soluções ortodoxas.</p>
+				</div>
+				<div  class="col-sm-6 col-md-4">
+					<img src="assets/img/posterVideo.png" style="width:90%" alt="" class="center-block img-responsive img-thumbnail">
+				</div>
+			</div>
+
+</section> <!---->
+
+
+<section id="oqTrazer">
+	<div class="container text-center">
+		<img id="de	scricao" src="assets/img/oqtrazer.png" alt="o que trazer">
+		<div id="bg" class="col-sm-10 col-sm-offset-2">
+			<ul>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Documento de identidade com foto</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Comprovante de residência</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Carteirinha de vacinação</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Ração preferida do cachorro, na quantidade suficiente para toda a estadia</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Uma roupa do dono usada, para que o cão se familiarize melhor</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Um anti-pulga de sua preferência para ser aplicado no check-in</li>
+				<li><img id="patinha" src="assets/img/_icone/patinha.png"> * O anti-pulga pode ser adquirido aqui no Hotel</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+	<!--Horário de funcionamento -->
+
+	<section class="jumbotron" style=" padding-top: 100px"  id="horarioFuncionamento">
+		<div class="container 	">
+		
+		<div class="col-sm-6  wow bounceInLeft">
+			<img class="center-block" src="assets/img/_icone/clock.png" style="width:60%;" alt="icone de relogio">
+		</div>
+
+		<div class="col-sm-6">
+
+			<h1 class="tituloSessao wow bounceInRight">Horário de Funcionamento</h1>	
+			<hr>
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
+				<h2 class="tituloLista">HOTELARIA</h2>
+				<ul>
+					<li>Atendimento todos os dias da semana</li>
+				</ul>
+			</div>
+
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+				<h2 class="tituloLista">DAY CARE</h2>
+				<ul>
+					<li>Atendimento das 07:00 as 18:30</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	</section>
+
+<!--Parceiros -->
+<section  id="parceiros">
+	<div class="container">
+				<div class="col-sm-12">
+
+					<h1 class="tituloSessao">parceiros</h1>
+				</div>
+
+		<div class="col-sm-6 wow bounceInLeft">
+			<figure>
+				<a class="thumbnail" href="http://www.sorrisopets.com.br" target="_blank">
+					<img src="assets/img/_parceiros/sorrisopets.png" alt="Sorriso Pets Odontologia Veterinária Especializada">
+					<figcaption>Odontologia Veterinária Especializada</figcaption>
+  				</a>
+			</figure>
+		</div>
+
+		<div class="col-sm-6 wow bounceInRight">
+			<figure>
+				<a class="thumbnail" href="https://www.facebook.com/PetShopFranciscao/?fref=ts" target="blank">
+					<img src="assets/img/_parceiros/franciscao2.png" alt="Pet Shop Franciscão">
+					<figcaption>Pet Shop Franciscão</figcaption>
+				</a>
+			</figure>
+		</div>	
+    </div>
+</section>
+
+
+	<!--Contao -->
+	<section id="contato" class="col-sm-12">
+		<div class="container">
+
+			<h1 class="row tituloSessao col-sm-12">contato</h1>
+			<!-- API googleMaps -->
+			<div class="row col-sm-6">
+				<div id="mapa" class="container col-sm-6"></div>
+			</div>
+				
+			<div class="container col-sm-6 text-center">
+				<p id="contato">MV Jonathan Pires
+				<br>CRMV: 38.592
+				<br>Cel. (11) 96907-4567
+				<br>R. Carlos Gomes, 1603 - Vila Graff, Jundiaí - SP
+				<br>www.apethotel.com.br</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="reservaTelefone">
+		<div class="container">
+			<h1 class="row tituloSessao col-sm-12">Faça sua reserva pelo telefone</h1>
+
+
+			<p class="col-sm-4 col-sm-offset-2 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.2s">
+				<i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 96907-4567 </span>				
+			</p>
+			<p class="col-sm-4   wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.6s">
+				<i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 96907-4567 </span>
+			</p>
+			
+		</div>		
+	</section>
+
+
+<div class="row"></div>
+<!--Rodapé -->
+<footer>
+	<div class="container text-center">
+		<figure>
+			<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-3x"></i></a>
+			<a target="_blank"  href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
+			<i class="fa fa-whatsapp fa-3x"></i>
+		</figure>
+		<p>Copyright&copy; 2016 - Apet Hotel - Todos os direitos reservados</p>
+	</div>
+</footer>	
+
+
+<!--import de scripts -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- flickity import new carrosel 
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>-->
+<script type="text/javascript" src="vendor/flickity/flickity.js"></script>
+<!--wow import -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- asset imports -->
+<script type="text/javascript" src="assets/js/site.js"></script>
+<script type="text/javascript" src="assets/js/mapa.js"></script>
+
+
+<!-- jssor.slider-21.1.5.min -->
+<script type="text/javascript" src="vendor/jssor.slider-21.1.5.min.js"></script>
+
+</body>
+</html>
