@@ -91,7 +91,6 @@ a.page-scroll{
     }
 }
 
-
 .cssmenu {
   width: auto;
   box-sizing: content-box;
@@ -283,7 +282,7 @@ div#modalInauguracao .modal-content{
 }
 
 div#modalInauguracao .modal-title{
-    padding-top: 50px;
+  padding-top: 50px;
   padding-bottom: 20px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 35px;
@@ -299,23 +298,23 @@ div#modalInauguracao .modal-title{
 @media(max-width: 762px)
 {
   div#modalInauguracao .modal-content{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  max-width: 200px;
-}
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 100%;
+  }
 
 
-div#modalInauguracao .modal-title{
+  div#modalInauguracao .modal-title{
     padding-top: 50px;
-  padding-bottom: 20px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  line-height: 55px;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-top: 0px;
-  text-align: center;
-}
+    padding-bottom: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0px;
+    text-align: center;
+  }
 
 }
 
@@ -542,7 +541,10 @@ section#servicos div.carousel-cell:hover{
 
 section#oqTrazer{
   background-image: url('../img/bgdog.jpg');
-  padding: 25px;  
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 
@@ -568,6 +570,7 @@ section#oqTrazer li{
 }
 
 section#oqTrazer img#descricao{
+  margin-top: -15px;
   margin-bottom: 0px;
 }
 
@@ -583,6 +586,12 @@ section#oqTrazer img#patinha{
   }
   img#descricao {
     width: 90%;
+  }
+  section#oqTrazer li{
+    font-size: 12pt;
+  }
+  section#oqTrazer{
+    background-size:100% 100%;
   }
 }
 

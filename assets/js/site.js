@@ -168,6 +168,8 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
 
+$('#modalInauguracao').modal('show')
+
 // galeria
 
 jQuery(document).ready(function ($) {
