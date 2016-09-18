@@ -108,61 +108,58 @@
 		<p class="wow fadeInDown" style='font-size: 30px; font-family: "Rancho", cursive; margin-bottom: 50px '> 
 			O 1º Apart-Hotel para cães <br>		
 		</p>
-
-		<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
-			<img src="assets/img/_icone/atendimento.png" id="icon">
-			<h2>Atendimento</h2>
-			<hr/>  
-			<p id="desc">
-				Muito atenciosos e cuidadosos me deram muito biscoito
-			</p>
-		</div>
-
-		<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.4s">  
-			<img src="assets/img/_icone/instalacoes.png" id="icon">
-			<h2>instalações</h2>
-			<hr/>
-			<p id="desc">
-				Vários brinquedos fofinhos, e muita diversão (tinha uma cadelinha linda ao lá...)
-			</p>
-		</div>
-
-		<div class=" col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.6s">  
-			<img src="assets/img/_icone/cuidado.png" id="icon">
-			<h2>cuidado</h2>
-			<hr/>
-			<p id="desc">
-				Todos me chamaram pelo nome e me davam muito carinho :3
-			</p>
-		</div>
-
-		<div class="row"></div>
-
 		<div class="carousel" data-flickity>
 			<div class="carousel-cell jumbotron">
-				<div class="row col-sm-12">
-					<img src="assets/img/_avaliacao/cv.jpg" class="img-circle" alt="orlando comentario">
-					<h3>Orlando o mito</h3>
-					<hr>
-					<p>
-						<br>
-						Caros amigos, o novo modelo estrutural aqui preconizado assume importantes<br>posições no estabelecimento das condições inegavelmente apropriadas.
-					</p>
+
+				<div class="col-sm-12" id="fotoAvaliador">
+					<img src="assets/img/_avaliacao/avatar.png" class="img-circle" alt="avaliador"> <!-- imagem do avaliador -->
 				</div>
-			</div>
-			
-			<!-- segunda avaliacao -->
-			<div class="carousel-cell jumbotron">
-				<div class="row col-sm-12">
-					<img src="assets/img/_avaliacao/sabrina-dog.png" class="img-circle" alt="sabrina the dog">
-					<h3>O cão amigão</h3>
-					<hr>
-					<p>
-						<br>
-						Caros amigos, o novo modelo estrutural aqui preconizado assume importantes<br>posições no estabelecimento das condições inegavelmente apropriadas.
-					</p>
+				
+				<div id="notas">
+					<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
+						<img src="assets/img/_icone/atendimento.png">
+						<h2>Atendimento</h2>
+						<hr/>  
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
+					</div>
+
+					<div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.4s">  
+						<img src="assets/img/_icone/instalacoes.png">
+						<h2>instalações</h2>
+						<hr/>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+					</div>
+
+					<div class=" col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.6s">  
+						<img src="assets/img/_icone/cuidado.png">
+						<h2>cuidado</h2>
+						<hr/>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+					</div>
 				</div>
-			</div>
+
+				<div class="row col-sm-12" id="comentario">
+						<h3>Seja o 1º a comentar</h3>
+						<hr>
+						<p>
+							<br>
+							Deixe seu comentário aqui.
+						</p>
+				</div>
+			</div>			
+			<!-- Proximas avaliações... -->
 		</div>
 	</div>
 </div>
@@ -211,14 +208,16 @@
             
         <!-- Loading Screen -->
         
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
+        <div id="galeria" data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/01.jpg" />
                 <img data-u="thumb" src="assets/img/_galeria/thumb-01.jpg" />
+                <p>Suite luxo (para cães até  $15kg) $70/diária</p>
             </div>
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/02.jpg" />
                 <img data-u="thumb" src="assets/img/_galeria/thumb-02.jpg" />
+                <p>Suite presidencial: Todos os tamanhos $84/diária</p>
             </div>
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/03.jpg" />
@@ -284,10 +283,12 @@
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/01.jpg" />
                 <img data-u="thumb" src="assets/img/_galeria/thumb-01.jpg" />
+                <p>Suite luxo (para cães até  $15kg) $70/diária</p>
             </div>
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/02.jpg" />
                 <img data-u="thumb" src="assets/img/_galeria/thumb-02.jpg" />
+                <p>Suite presidencial: Todos os tamanhos $84/diária</p>
             </div>
             <div data-p="150.00" style="display: none;">
                 <img data-u="image" src="assets/img/_galeria/03.jpg" />
@@ -411,7 +412,6 @@
 				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Ração preferida do cachorro, na quantidade suficiente para toda a estadia</li>
 				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Uma roupa do dono usada, para que o cão se familiarize melhor</li>
 				<li><img id="patinha" src="assets/img/_icone/patinha.png"> Um anti-pulga de sua preferência para ser aplicado no check-in</li>
-				<li><img id="patinha" src="assets/img/_icone/patinha.png"> * O anti-pulga pode ser adquirido aqui no Hotel</li>
 			</ul>
 		</div>
 	</div>
@@ -433,14 +433,15 @@
 			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
 				<h2 class="tituloLista">HOTELARIA</h2>
 				<ul>
-					<li>Atendimento todos os dias da semana</li>
+					<li>Check-in das 8 as 19</li>
+					<li>check-out: 12:00</li>
 				</ul>
 			</div>
 
 			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
 				<h2 class="tituloLista">DAY CARE</h2>
 				<ul>
-					<li>Atendimento das 07:00 as 18:30</li>
+					<li>Atendimento das 07:00 as 19:00</li>
 				</ul>
 			</div>
 
@@ -490,6 +491,7 @@
 			<div class="container col-sm-6 text-center">
 				<p id="contato">MV Jonathan Pires
 				<br>CRMV: 38.592
+				<br>Tel. (11) 4586-7900
 				<br>Cel. (11) 96907-4567
 				<br>R. Carlos Gomes, 1603 - Vila Graff, Jundiaí - SP
 				<br>www.apethotel.com.br</p>
@@ -504,7 +506,7 @@
 
 
 			<p class="col-sm-4 col-sm-offset-2 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.2s">
-				<i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 96907-4567 </span>				
+				<i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 4586-7900 </span>				
 			</p>
 			<p class="col-sm-4   wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.6s">
 				<i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 96907-4567 </span>

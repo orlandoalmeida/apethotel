@@ -455,16 +455,6 @@ div#avaliacao div.carousel-cell img{
   width:  10%;
 }
 
-@media (max-width: 728px){
-  div#avaliacao div.carousel-cell img{
-  width:  20%;
-}
-}
-
-img#icon{
-  width:  15%;
-}
-
 
 div#avaliacao p#desc {
   text-transform: uppercase;
@@ -475,9 +465,41 @@ div#avaliacao h2 {
   color: #000000;
 }
 
+
+div#avaliacao div#fotoAvaliador{
+  margin-bottom: 30px;
+}
+
+div#avaliacao div#notas img{
+  width: 20%;
+}
+
+div#avaliacao div#comentario{
+  padding-top: 10px;
+}
+
+
+div#avaliacao i.fa.fa-star {
+  color: #FFD700;
+  margin-bottom: 50px;
+}
+
+div#avaliacao i.fa.fa-star-half-o{
+  color: #FFD700;
+}
+
+@media (max-width: 728px){
+  div#avaliacao div.carousel-cell img{
+  width:  20%;
+  }
+  div#avaliacao div#fotoAvaliador img{
+  width: 25%;
+  }
+
+}
+
+
 /* estilo da section servicos */
-
-
 
 section#servicos div.carousel  p{
   padding-bottom: 20px;
@@ -589,6 +611,7 @@ section#oqTrazer img#patinha{
   }
   section#oqTrazer li{
     font-size: 12pt;
+    text-align: left;
   }
   section#oqTrazer{
     background-size:100% 100%;
@@ -803,4 +826,15 @@ footer p{
             height /**/: 66px;
         }
 
-          
+
+/*estilo da caixa de descrição da galeria*/
+div#galeria p{
+  background: rgba(211, 255, 130, .5); 
+  color: rgba(0, 0, 0, 1.0); 
+  font-size: 20pt;
+  width:100%;
+  display:block;
+  position:relative;
+  top: 420px;
+  padding:15px;
+}
