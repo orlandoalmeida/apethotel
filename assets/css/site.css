@@ -899,6 +899,8 @@ div.form-group p{
 /* preços e pacotes */
 
 .pricing {
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: white;
   background-color: #222222;
   background: no-repeat center center scroll;
@@ -943,4 +945,22 @@ div.form-group p{
 
 div.itemdois{
   margin-top: 500px;
+}
+
+div#dayCare{
+  margin-right: 20px;
+  transition: all 0.5s ease-in-out; 
+}
+
+div#hotelaria{
+  margin-left: 20px;
+  transition: all 0.5s ease-in-out; 
+}
+
+div#hotelaria:hover{
+  transform: scale(1.2);
+}
+
+div#dayCare:hover{
+  transform: scale(1.2); 
 }
