@@ -42,25 +42,38 @@ switch(nomeServico) {
 
     case "carousel-cameras":
         titulo = "Camêras online em HD 24 Hs";
+        texto = "Nosso espaço possui cameras de alta qualidade. Disponível por acesso remoto via web."
         break;
     case "carousel-taxi":
         titulo = "Táxi dog";
+        texto = "Nós oferecemos o serviço de leva e traz com ar-condicionado ou ar-quente. "+
+                " Atendemos capital de São Paulo e interior.";
         break;
     case "carousel-supervisao":
         titulo = "Supervisão veterinária 24 horas";
+        texto = "Para que você viaje tranquilamente sabendo que seu cãozinho estará em boas mãos "+
+                "pois nossa equipe possui a supervisão veterinária 24 horas por dia no hotel";
         break;
     case "carousel-suites":
         titulo = "Suítes com serviço de quarto";
+        texto = "Nosso cardápio formulado por chef's de cozinha veterinários está disponível para"+
+                " todos os cães hospedados em nosso hotel. ";
         break;
     case "carousel-playground":
         titulo = "Playground o dia inteiro!";
+        texto = "Os animais tem acesso a toda nossa área de lazer. Onde vai poder fazer novas "+
+                 "amizades. Participar de várias brincadeira. Brincar com nossos brinquedos "+ 
+                 "anti-stress e o principal GASTAR MUITA ENERGIA!";
         break;
     default:
          titulo = "Atividades e brinquedos anti-stress";
+         texto = "Com os brinquedos anti-stress os animais passam mais tempo entretidos nas "+ 
+                 " brincadeiras e portanto mais tempo se divertindo e gastando mais energia. "+
+                 "Gerando um aumento do bem estar animal. ";
 }
 
    $('.tituloDescServico').html(titulo);
-   $('.textoDescServico').html();
+   $('.textoDescServico').html(texto);
 }
 
 
