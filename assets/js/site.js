@@ -109,7 +109,6 @@ video.play();
 
 if($( document ).width() > 767){
  tocarVideo()
-   $("#modalInauguracao").modal("show");
 }
 
 
@@ -180,8 +179,6 @@ $(function() {
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
-
-$('#modalInauguracao').modal('show')
 
 // galeria
 
