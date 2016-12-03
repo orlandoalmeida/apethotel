@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 
 
@@ -38,6 +38,17 @@ h2.tituloSessao{
   font-weight: 900;
   text-align: center;
  }
+
+
+h2.tituloModal{ 
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+ }
+
 
 
 
@@ -265,8 +276,42 @@ right: 0;
 }
 
 
+
+
 hr{border-color:#F05F40;border-width:3px;max-width:100px}
 hr.light{border-color:#fff}
+
+
+/*estilo do modal promocao*/
+
+      #modalPromocao .modal-content{
+                background-color: #f1c40f;
+                color: white;
+      }
+
+
+      #modalPromocao img{
+          margin-top: 30px;
+          margin-bottom: 30px;
+      }
+
+      .closePromocao{
+          margin: 15px 15px 0px 0px ;
+      }
+
+    .descPromocao{
+                    
+            font-family: "Rancho", cursive;
+            font-size: 18pt;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 25px;
+            text-align: left;
+            color: white;
+    }
+
+
+
 
 
 /*estilo da section sobre*/
@@ -569,7 +614,7 @@ section#oqTrazer li{
 }
 
 section#oqTrazer img#descricao{
-  margin-top: -15px;
+  /*margin-top: -15px;*/
   margin-bottom: 0px;
 }
 
@@ -601,6 +646,13 @@ section#oqTrazer img#patinha{
     font-size: 25px;
   }
 }
+
+
+ #horarioFuncionamento li {
+    font-size: 18px;
+  }
+
+
 
 /* Estilo Parceiros */
 
@@ -642,7 +694,7 @@ section#contato{
 
 @media (max-width: 728px){
   section#contato{
-  background-image: url('../img/pawBg.png');
+  /*background-image: url('../img/pawBg.png');*/
   }
 }
 
