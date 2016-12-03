@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en pt-br">
+<head>
+    <!-- Meta charset e viewport -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Octavio Pires Neto">
+    <meta name="author" content="https://github.com/octaviopires">
+    <meta name="author" content="Orlando Estefano de Almeida">
+    <meta name="author" content="https://github.com/orlandoeal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#001522"> 
+    <meta name="description" content="Hotel para cães / cachorros 5 estrelas Jundiaí - SP" />
+    <meta name="keywords" content="hotel, daycare, cães, cachorros, ca, jundiaí, sp, são paulo, solto">
+    <meta name="google-site-verification" content="EtN-7-PJntDi83lfF3AyepP3q01YnYlwFbI6TG2wEyM" />
+    <title>Apet Hotel</title>
+    
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- flickity import new carrosel -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+<!-- animate.css pra usar com wow.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="prod/css/site.css">
+
+<!-- google-fonts -->
+<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
+
+</head>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+<!--Cabeçalho -->
+<header >
+<div class="shade"></div>
+ 
+    <nav class="navbar navbar-fixed-top navbar-expanded navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" style="padding:0px; padding-left:5px" href="#page-top">
+                    <img width="40px" src="prod/img/logo.png" alt="">
+                </a>
+                <a class="navbar-brand page-scroll" style="margin-left:3px" href="#page-top">
+                  APETHOTEL                
+                </a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse cssmenu" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#instalacoes"><i class="fa fa-home "></i> &nbsp Suítes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#servicos"><i class="fa fa-heart "></i> &nbsp Serviços</a>
+                    </li>
+
+                      <li>
+                        <a class="page-scroll" href="#horarioFuncionamento"><i class="fa fa-clock-o "></i> &nbsp Hr. de Funcionamento</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#parceiros"><i class="fa fa-hand-spock-o"></i> &nbsp Parceiros</a>
+                    </li>
+                    <li>
+                        <a  class="page-scroll" href="#reservaTelefone"><i class="fa fa-envelope-o"></i> &nbspContato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+  
+<div style="z-index: 2; margin-top: 100px;  " class="content">
+    
+
+    <h1 class="tituloSessao fonteBranca" style=" padding-top:0px; margin-top: -10px; text-align: center; font-size: 35pt">
+        <span onclick="tocarVideo()" id="btnPlay" style="cursor:pointer" class="glyphicon glyphicon-play-circle"></span>
+        <br>   ApetHotel
+    </h1>
+    
+  </div>
+<video id="video" poster="prod/img/posterVideo.jpg" height="60%" width="100%" style=" z-index: -9000; opacity:1"  class="video" muted loop>
+
+ <source src="destino" type="video/mp4"> <!-- src="prod/mp4/playground.mp4" -->
+ 
+</video>
+</header>    
+
+
+<!--
+<div class="modal fade" id="modalPromocao" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close closePromocao" onclick="$('#modalPromocao').modal('hide');" data-dismiss="modal" aria-label="Close"><span class="fa-3x" aria-hidden="true">&times;</span></button>
+
+        <div class="modal-body text-center" style="margin-top: 50px;">
+        
+            <h2 style="color:#FAC61F" class=" tituloModal text-center">Aqui a black friday já começou!</h2>
+
+
+            <img class="img img-responsive center-block" src="prod/img/Black-Friday.png" alt="Black-Friday">
+
+            <p class="descPromocao"> Descontos especiais nos plano creche/ day care</p>
+
+            <button id="btnVenhaConferirPromocao" onclick="$('#modalPromocao').modal('hide'); $('#')" class="btn btn-warning btn-lg">  Venha Conferir! </button>
+        </div>
+    </div><!- /.modal-content ->
+  </div><!- /.modal-dialog ->
+</div><!- /.modal -->
+
+
+
+
+<!-- avaliacao -->
+<div id="avaliacao">
+    <div class="text-center container">
+        <h1 class="tituloSessao wow fadeInDownBig">  APETHOTEL  </h1>
+        <p class="wow fadeInDown" style='font-size: 30px; font-family: "Rancho", cursive;'> 
+            O 1º Apart-Hotel para cães <br>     
+        </p>
+        <div class="carousel" data-flickity>
+            <div class="carousel-cell jumbotron">
+
+                <div class="col-sm-12" id="fotoAvaliador">
+                    <img src="prod/img/_avaliacao/avatar.png" class="img-circle" alt="avaliador"> <!-- imagem do avaliador -->
+                </div>
+                
+    <h3 style=" margin-bottom: 50px;font-family: 
+    'Rancho', cursive;' ">Nos avalie e deixe um comentário</h3>
+                    
+
+                <div id="notas">
+                    <div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <img src="prod/img/_icone/atendimento.png" id="icone">
+                        <h2>Atendimento</h2>
+                        <hr/>  
+                        <!---->
+                        <div class="estrelas1">
+                            <form action="" method="post">
+                                <input type="radio" id="at_star-empty" name="fb" value="" checked/>
+                                <label for="at_star-1"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="at_star-1" name="fb" value="1"/>
+                                <label for="at_star-2"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="at_star-2" name="fb" value="2"/>
+                                <label for="at_star-3"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="at_star-3" name="fb" value="3"/>
+                                <label for="at_star-4"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="at_star-4" name="fb" value="4"/>
+                                <label for="at_star-5"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="at_star-5" name="fb" value="5"/>
+                            </form>
+                        </div>
+                    <!----> 
+                    </div>
+
+                    <div class="col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.4s">  
+                        <img src="prod/img/_icone/instalacoes.png" id="icone">
+                        <h2>Instalações</h2>
+                        <hr/>
+                        <div class="estrelas2">
+                            <form action="" method="post">
+                                <input type="radio" id="inst_star-empty" name="fb" value="" checked/>
+                                <label for="inst_star-1"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="inst_star-1" name="fb" value="1"/>
+                                <label for="inst_star-2"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="inst_star-2" name="fb" value="2"/>
+                                <label for="inst_star-3"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="inst_star-3" name="fb" value="3"/>
+                                <label for="inst_star-4"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="inst_star-4" name="fb" value="4"/>
+                                <label for="inst_star-5"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="inst_star-5" name="fb" value="5"/>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class=" col-sm-4 wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.6s">  
+                        <img src="prod/img/_icone/cuidado.png" id="icone">
+                        <h2>cuidado</h2>
+                        <hr/>
+                        <div class="estrelas3">
+                            <form action="" method="post">
+                                <input type="radio" id="cuid_star-empty" name="fb" value="" checked/>
+                                <label for="cuid_star-1"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="cuid_star-1" name="fb" value="1"/>
+                                <label for="cuid_star-2"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="cuid_star-2" name="fb" value="2"/>
+                                <label for="cuid_star-3"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="cuid_star-3" name="fb" value="3"/>
+                                <label for="cuid_star-4"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="cuid_star-4" name="fb" value="4"/>
+                                <label for="cuid_star-5"><i class="fa fa-star fa-2x"></i></label>
+                                <input type="radio" id="cuid_star-5" name="fb" value="5"/>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <form action="http://www.apethotel.com.br/avaliacaoApetHotel.php" method="post">
+                <div class="row col-sm-12" id="comentario">
+                        <h3>Seja o 1º a comentar</h3>
+                        
+                        <p>
+                            <div class="form-group">
+                              
+                                    <textarea class="form-control center-block" style="width:80%" id="msg" name="msg"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-info">Enviar Comentário</button>    
+                       
+                        </p>
+                </div>
+                </form>
+            </div>          
+            <!-- Proximas avaliações... -->
+        </div>
+    </div>
+</div>
+
+
+
+<!--Instalações -->
+<section class="module parallax parallax-1" id="instalacoes">
+  <div style="background: rgba(204, 204, 204, 0.2); padding:40px;  width:100%" class="container wow fadeIn "  data-wow-duration="1.5s" data-wow-delay="0.2s">
+
+    <div class="col-sm-4 col-sm-offset-4">
+
+        <img class="center-block" src="prod/img/logo.png" alt="">
+        <button class="btn btn-lg btn-parallax"  data-toggle="modal" data-target="#myModal"> Conheça nossas instalações</button>
+    </div>
+    
+  </div>
+</section>
+
+<!-- galeria instalacoes-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Suítes</h4>
+              </div>
+              <div class="modal-body" id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: 0px;  width: 960px; height: 480px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+                <!-- Galeria -->
+            
+        <!-- Loading Screen -->
+        
+        <div id="galeria" data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/01.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-01.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/02.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-02.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/03.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-03.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/04.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-04.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/05.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-05.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/06.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-06.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/07.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-07.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/08.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-08.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/09.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-09.jpg" />
+            </div>
+        
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+
+<!-- Galeria -->
+        </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- versão mobile -->
+
+<section class="instalacoesMobile" id="instalacoes">
+    <div class="col-sm-4 col-sm-offset-4">
+        <img class="center-block" src="prod/img/logo.png" alt="">
+        <button class="btn btn-lg btn-parallax"  data-toggle="modal" data-target="#myModal"> Conheça nossas suítes</button>
+    </div>
+    
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Suítes</h4>
+              </div>
+              <div class="modal-body" id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: 0px;  width: 960px; height: 480px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+                <!-- Galeria -->
+            
+        <!-- Loading Screen -->
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/01.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-01.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/02.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-02.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/03.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-03.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/04.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-04.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/05.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-05.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/06.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-06.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/07.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-07.jpg" />
+                
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/08.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-08.jpg" />
+            </div>
+            <div data-p="150.00" style="display: none;">
+                <img data-u="image" src="prod/img/_galeria/09.jpg" />
+                <img data-u="thumb" src="prod/img/_galeria/thumb-09.jpg" />
+            </div>
+        
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+
+<!-- Galeria -->
+        </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+ 
+</section>
+
+
+<!--Serviços -->
+<section  id="servicos" style="background-color: ">
+    <div class="container text-center">
+        <h1 class="tituloSessao">Serviços</h1>
+            <!-- Carrosel em  flickity -->
+            <div class="carousel" data-flickity="flickity-page-dots" >
+                <div data-name="carousel-cameras" class="carousel-cell" onclick="$flkty.select(0);">
+                    <div  class="info">
+                    <img src="prod/img/_icone/camera.png" alt="Camêras online em HD 24Hs">
+                <p>Camêras online em HD 24 Hs</p>
+                    </div>
+                </div>
+                
+                <div  data-name="carousel-taxi"  class="carousel-cell"  onclick="$flkty.select(1);">
+                    <div class="info">
+                <img src="prod/img/_icone/taxidog.png" alt="Táxi dog">
+                <p>Táxi dog</p>
+                    </div>
+                </div>
+
+                <div data-name="carousel-supervisao" class="carousel-cell" onclick="$flkty.select(2);">
+                    <div class="info">
+                        <img src="prod/img/_icone/veterinaio.png" alt="Supervisão veterinária 24 horas">
+                        <p style="font-size:15px">
+                        Supervisão veterinária 24 horas                
+                        </p>    
+                    </div>
+                </div>
+
+                <div data-name="carousel-suites" class="carousel-cell"  onclick="$flkty.select(3);">
+                    <div class="info">
+                        <img src="prod/img/_icone/serviso-quarto.png" alt="Suítes com serviço de quarto">
+                        <p>Suítes com serviço de quarto</p>
+                    </div>
+                </div>
+
+                <div data-name="carousel-playground" class="carousel-cell"  onclick="$flkty.select(4);">
+                        <div class="info">
+                <img src="prod/img/_icone/playground.png" alt="Animais soltos no playground o dia inteiro">
+                        <p>Animais soltos no playground o dia inteiro</p>
+                    </div>
+                </div>
+
+                <div data-name="carousel-atividades" class="carousel-cell"  onclick="$flkty.select(5);">
+                        <div class="info">
+                <img src="prod/img/_icone/toys.png" alt="Atividades e brinquedos antiestresse">
+                        <p>Atividades e brinquedos antiestresse</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+            <div class="DescServico  slideUp" style="background-color:#334; width:100%; min-height: 400px;padding-top:50px" >
+                <div class="col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-1 text-left">
+                    <h2 class="tituloLista tituloDescServico fonteBranca"> Táxi dog</h2>
+
+                    <p class="textoDescServico">Nós oferecemos o serviço de leva e traz com ar-condicionado ou ar-quente. 
+                    Atendemos a capital de São Paulo e interior.</p>
+                </div>
+                <div  class="col-sm-6 col-md-4">
+                    <img src="prod/img/_servicos//taxi-dog.jpg" style="width:90%" id="fotoServico" alt="foto do serviço" class="center-block img-responsive img-thumbnail">
+                </div>
+
+                <div style="clear:both"></div>
+            </div>
+
+</section> <!---->
+
+<!-- Preços e pacotes -->
+
+ <section id="pricing" class="pricing">
+        <div class="container wow fadeIn text-center">
+
+        <h1 style="color:black" class="tituloSessao">Preços promocionais de inauguração</h1>
+        <hr>    
+        
+
+            <div class="col-md-4 col-md-offset-2" id="dayCare">
+                <div class="pricing-item">
+                    <h3>Day Care</h3>
+                    <hr class="colored">
+                    <div class="price"><span class="number">Planos mensais</span></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">2x por semana $360/mes (R$45,00 p/ dia)</li>
+                        <li class="list-group-item">3x por semana $444/mes (R$37,00 p/ dia)</li>
+                        <li class="list-group-item">4x por semana $528/mes (R$33,00 p/ dia)</li>
+                        <li class="list-group-item">5x por semana $600/mes (R$30,00 p/ dia)</li>
+                        <li class="list-group-item">6x por semana $672/mes (R$28,00 p/ dia)</li>
+                    </ul>
+                    </div>
+            </div>
+            <br><br><br>
+            <div class="col-md-4" id="hotelaria">
+                <div class="pricing-item">
+                    <h3>Hotelaria</h3>
+                    <hr class="colored">
+                    <div class="price"><span class="number">Suítes Exclusivas</span></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Suíte luxo (R$70,00) <br> (para cães de até 15 kilos)</li>
+                        <li class="list-group-item">Suíte presidencial  (R$84,00)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+                   
+
+
+<!-- oq trazer -->
+<section id="oqTrazer">
+    <div class="container text-center">
+        <img id="descricao" src="prod/img/oqtrazer.png" alt="o que trazer">
+        <div id="bg" class="col-sm-10 col-sm-offset-2">
+            <ul>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Cópia do documento de identidade com foto</li>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Cópia do Comprovante de residência</li>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Cópia do Carteirinha de vacinação</li>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Ração preferida do cachorro, na quantidade suficiente para toda a estadia</li>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Uma roupa do dono usada, para que o cão se familiarize melhor</li>
+                <li><img id="patinha" src="prod/img/_icone/patinha.png"> Um anti-pulga de sua preferência para ser aplicado no check-in</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!--Horário de funcionamento -->
+
+    <section class="jumbotron" style=" padding-top: 100px"  id="horarioFuncionamento">
+        <div class="container   ">
+        
+        <div class="col-sm-6  wow bounceInLeft">
+            <img class="center-block" src="prod/img/_icone/clock.png" style="width:60%;" alt="icone de relogio">
+        </div>
+
+        <div class="col-sm-6">
+
+            <h1 class="tituloSessao wow bounceInRight">Horário de Funcionamento</h1>    
+            <hr>
+            <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                <h2 class="tituloLista">HOTELARIA</h2>
+                <ul>
+                    <li>Check-in das 8:00 as 19:00</li>
+                    <li>check-out: 12:00</li>
+                </ul>
+            </div>
+
+            <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                <h2 class="tituloLista">DAY CARE</h2>
+                <ul>
+                    <li>Atendimento das 07:00 as 18:30 (Com tolerância de 30 minutos)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+<!--Parceiros -->
+<section  id="parceiros">
+    <div class="container">
+                <div class="col-sm-12">
+
+                    <h1 class="tituloSessao">parceiros</h1>
+                </div>
+
+        <div class="col-sm-6 wow bounceInLeft">
+            <figure>
+                <a class="thumbnail" href="http://www.sorrisopets.com.br" target="_blank">
+                    <img src="prod/img/_parceiros/sorrisopets.png" alt="Sorriso Pets Odontologia Veterinária Especializada">
+                    <figcaption>Odontologia Veterinária Especializada</figcaption>
+                </a>
+            </figure>
+        </div>
+
+        <div class="col-sm-6 wow bounceInRight">
+            <figure>
+                <a class="thumbnail" href="https://www.facebook.com/PetShopFranciscao/?fref=ts" target="blank">
+                    <img src="prod/img/_parceiros/franciscao2.png" alt="Pet Shop Franciscão">
+                    <figcaption>Pet Shop Franciscão</figcaption>
+                </a>
+            </figure>
+        </div>  
+    </div>
+</section>
+
+    <section id="reservaTelefone" class="jumbotron">
+        <div class="container">
+            <h1 class="row tituloSessao col-sm-12">Faça sua reserva pelo telefone</h1>
+
+
+            <p class="col-sm-4 col-sm-offset-2 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.2s">
+                <i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 4586-7900 </span>             
+            </p>
+            <p class="col-sm-4   wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.6s">
+                <i class="fa fa-phone-square fa-3x"></i> &nbsp <span>(11) 96907-4567 </span>
+            </p>
+            
+        </div>      
+    </section>
+
+    <!--Contao -->
+    <section id="contato" class="col-sm-12  ">
+        <div class="container">
+
+            <h1 class="row tituloSessao col-sm-12 fonteBranca">contato</h1>
+            <!-- API googleMaps -->
+            <div class="row col-sm-6">
+                <div id="mapa" class="container col-sm-6"></div>
+            </div>
+                
+            <div class="container col-sm-6 text-center ">
+                <p class="fonteBranca" id="contato">MV Jonathan Pires
+                <br>CRMV: 38.592
+                <br>Tel. (11) 4586-7900
+                <br>Cel. (11) 96907-4567
+                <br>R. Carlos Gomes, 1603 - Vila Graff, Jundiaí - SP
+                <br>falecom@apethotel.com.br</p>
+            </div>
+        </div>
+
+    </section>
+	
+
+	<section style="min-height: 300px;" id="termosECondicoes">
+		
+      <div style="margin-bottom: 20px" class="container">
+            <h1 style="margin-bottom: 0px" class="row tituloSessao col-sm-12">Termos e Condições &nbsp; <i class="fa fa-file-text-o"></i></h1>
+ <h3 class="text-center" style=" margin-bottom: 50px;font-family: 'Rancho', cursive;' ">Clique em um dos botões abaixo para visualizar os termos e condições:</h3>
+    
+            <p class="col-sm-4 col-sm-offset-2 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.2s">
+                <a style=""  target="blank" href="prod/docs/tc_hotelaria.pdf"> 
+                    <button class="btn btn-lg btn-info">
+                        <i class="fa fa-home fa-2x"></i> &nbsp <span>Hotelaria</span>             
+                    </button>
+                </a>
+            </p>    
+            <p class="col-sm-4   wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="0.6s">
+                <a style=""  target="blank" href="prod/docs/tc_daycare.pdf"> 
+                    <button class="btn btn-lg btn-info">
+                        <i class="fa fa-paw fa-2x"></i> &nbsp <span>Day-Care</span>             
+                    </button>
+                </a>
+            </p>
+            
+        </div>     
+
+	</section>
+
+	
+<div style="clear: both;"></div>
+
+<!--Rodapé -->
+<footer>
+    <div class="container text-center">
+        <figure>
+            <a target="_blank" href="https://www.facebook.com/ApetHotel-584979445006809/?ref=ts&fref=ts"><i class="fa fa-facebook fa-3x"></i></a>
+            <a target="_blank"  href="https://www.instagram.com/apet_hotel/"><i class="fa fa-instagram fa-3x"></i></a>
+            <i class="fa fa-whatsapp fa-3x"></i>
+        </figure>
+        <p>Copyright&copy; 2016 - Apet Hotel - Todos os direitos reservados</p>
+    </div>
+</footer>   
+
+
+<!--import de scripts -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- flickity import new carrosel 
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>-->
+<script type="text/javascript" src="vendor/flickity/flickity.js"></script>
+<!--wow import -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- asset imports -->
+<script type="text/javascript" src="prod/js/site.js"></script>
+<script type="text/javascript" src="prod/js/mapa.js"></script>
+
+
+<!-- jssor.slider-21.1.5.min -->
+<script type="text/javascript" src="vendor/jssor.slider-21.1.5.min.js"></script>
+ 
+
+</body>
+</html>
